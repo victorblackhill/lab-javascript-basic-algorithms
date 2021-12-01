@@ -60,3 +60,33 @@ let message= "What?! You both have the same name?";
 }
 
 console.log(message)
+
+// Bonus 1
+
+let paragraphs = `et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel auctor ex, congue mattis velit. Cras faucibus vel lacus ac interdum. Etiam quis leo nulla. Morbi sagittis vitae ligula vitae pretium. Praesent id arcu in felis tincidunt aliquam. Mauris interdum sit amet risus eleifend egestas. Nulla vel odio finibus, varius arcu eu, porta augue. Vivamus consectetur eget elit a tristique. Nulla condimentum pellentesque sem, ut iaculis sapien volutpat sed. Pellentesque non mauris non enim ultricies congue in vel quam.
+
+Morbi aliquam diam ac mi pulvinar, eget lobortis justo aliquam. Phasellus sodales augue in felis imperdiet mollis. Donec sit amet turpis enim. Mauris ante arcu, malesuada sollicitudin suscipit et, euismod vitae dui. Maecenas vel arcu at turpis egestas viverra quis eget urna. Nullam at pharetra erat. Cras convallis orci velit, sed fermentum sapien luctus at. Vivamus auctor rhoncus nulla, a consequat velit posuere nec. Mauris dignissim est dui, vel tempus ligula rhoncus eu. Vestibulum euismod lacus vitae enim pellentesque dignissim. Duis rutrum sollicitudin nibh, ac varius libero tempus volutpat. Donec vitae eros mattis, pellentesque eros non, bibendum dolor. Donec sed posuere lacus. Nulla a augue justo.
+
+Mauris interdum diam id nibh tincidunt, id volutpat neque ultricies. Sed porttitor velit eget magna ullamcorper convallis. Donec ac imperdiet mi, id gravida nunc. Cras auctor bibendum fermentum. In et eros dapibus, pulvinar tellus laoreet, venenatis nulla. Suspendisse potenti. Etiam et nunc vel orci finibus suscipit. Vivamus ut ullamcorper dolor. Cras interdum varius orci. Suspendisse sit amet aliquam felis, sit amet laoreet tellus. Ut et convallis lorem.`
+
+//on initialise le compteur à 0
+
+paragraphs.toLowerCase();
+
+let count = 0;
+
+    for(let k=0 ; k < paragraphs.length; k++) {
+        if (
+        (paragraphs[k] === " " && paragraphs[k + 1] === "e" && paragraphs[k + 2] === "t" && paragraphs[k + 3] === " ")
+        ||
+        (paragraphs[k] === " " && paragraphs[k + 1] === "e" && paragraphs[k + 2] === "t" && paragraphs[k + 3] === "," )
+        ||
+        (paragraphs[k] === " " && paragraphs[k + 1] === "e" && paragraphs[k + 2] === "t" && paragraphs[k + 3] === ".")
+        )
+        {
+            count ++;
+            console.log(k / paragraphs.length * 100);
+
+        }    }
+
+console.log(count);
