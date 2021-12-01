@@ -20,3 +20,22 @@ else if (hacker2.length > hacker1.length) {
 
 
 // Iteration 3: Loops
+
+let res1 = ""
+let res2 = ""
+
+for (let k = 0; k < hacker2.length-1; k++) {
+    res1 += hacker2[k] + " ";
+    console.log(res1);
+}
+res1 += hacker2[hacker2.length -1 ];
+
+
+
+for (let k = hacker1.length - 1; k >= 0; k--) {
+    res2 += hacker1[k];
+    console.log(res2);
+}
+
+console.log(res1.toUpperCase());
+console.log(res2);
