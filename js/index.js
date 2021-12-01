@@ -1,10 +1,10 @@
 // Iteration 1: Names and Input
 //
 
-let hacker1 = "Hernan";
+let hacker1 = "Manuel";
 console.log(`The driver's name is ${hacker1}`);
 
-let hacker2 = "Victor";
+let hacker2 = "Victoria";
 console.log(`The driver's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -39,3 +39,26 @@ for (let k = hacker1.length - 1; k >= 0; k--) {
 
 console.log(res1.toUpperCase());
 console.log(res2);
+
+k = 0;
+let message= "What?! You both have the same name?";
+
+;
+
+    while ( hacker1[k] || hacker2[k]) {
+
+    if (hacker1[k] === hacker2[k]) {
+        k++
+    }
+    else if (hacker1[k] > hacker2[k]) { 
+        message = hacker2 + " The driver's name goes first.";
+        break
+
+    } else { 
+        message = hacker1 + " Yo, the navigator goes first definitely";
+        break
+    }
+
+}
+
+console.log(message)
