@@ -43,8 +43,6 @@ console.log(res2);
 k = 0;
 let message= "What?! You both have the same name?";
 
-;
-
     while ( hacker1[k] || hacker2[k]) {
 
     if (hacker1[k] === hacker2[k]) {
